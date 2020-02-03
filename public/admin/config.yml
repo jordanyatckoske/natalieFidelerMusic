@@ -4,10 +4,11 @@ backend:
 media_folder: public/images/uploads
 public_folder: /images/uploads
 collections:
-  - name: "Personal Info"
-    label: "personalInfo"
+  - name: "personalInfo"
+    label: "Personal Info"
     folder: "content/personalInfo"
-    create: false
+    identifier_field: artistName
+    create: true
     fields:
       - {
           label: "Artist Name",
@@ -19,6 +20,7 @@ collections:
       - { label: "Artist Bio", name: "artistBio", widget: "markdown" }
   - name: "quotes"
     label: "Quotes"
+    identifier_field: "quote"
     folder: "content/quotes"
     create: true
     fields:
@@ -29,6 +31,7 @@ collections:
   - name: "work"
     label: "Work Experience"
     folder: "contact/work"
+    identifier_field: "position"
     create: true
     fields:
       - { label: "Position", name: "position", widget: "string" }
