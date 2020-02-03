@@ -4,19 +4,36 @@ backend:
 media_folder: public/images/uploads
 public_folder: /images/uploads
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "content/home.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - label: "Cats"
-            name: "cats"
-            widget: list
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+  - name: "Personal Info"
+    label: "personalInfo"
+    folder: "content/personalInfo"
+    create: false
+    fields:
+      - {
+          label: "Artist Name",
+          name: "artistName",
+          default: "Natalie Fideler",
+          widget: "string",
+        }
+      # make into relation - { label: "Featured Quote", name: "featuredQuote", widget: 'string'}
+      - { label: "Artist Bio", name: "artistBio", widget: "markdown" }
+  - name: "quotes"
+    label: "Quotes"
+    folder: "content/quotes"
+    create: true
+    fields:
+      - { label: "Quote", name: "quote", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Featured on Home", name: "featuredOnHome", widget: "boolean" }
+      - { label: "Date", name: "date", widget: "datetime" }
+  - name: "work"
+    label: "Work Experience"
+    folder: "contact/work"
+    create: true
+    fields:
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Employer", name: "employer", widget: "string" }
+      - { label: "Location", name: "location", widget: "map" }
+      - { label: "Start Date", name: "startDate", widget: "datetime" }
+      - { label: "End Date", name: "endDate", widget: "datetime" }
+      - { label: "Current", name: "current", default: false, widget: "boolean" }
