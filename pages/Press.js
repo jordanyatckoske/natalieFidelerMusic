@@ -1,10 +1,10 @@
 import Head from "next/head";
 import MainLayout from "../components/Layouts/MainLayout";
 import PressList from "../components/Press/PressList";
-// import { attributes, react as HomeContent } from "../content/quotes/quotes.md";
+import { attributes, react as HomeContent } from "../content/quotes/quotes.md";
 
 function Press() {
-  // let { quotes } = attributes;
+  let { pressQuotes } = attributes;
   return (
     <MainLayout>
       <Head>
@@ -12,7 +12,7 @@ function Press() {
       </Head>
 
       <h2>Press</h2>
-      {/* <PressList quotes={quotes} /> */}
+      <PressList pressQuotes={pressQuotes} />
     </MainLayout>
   );
 }

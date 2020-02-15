@@ -1,9 +1,9 @@
-export default function PressCard({ press }) {
+export default function quoteCard({ quote }) {
   return (
     <div>
-      <h2>{press.quote}</h2>
-      <h4>{press.author}</h4>
-      <h4>{press.date}</h4>
+      <h2>{quote.quote}</h2>
+      <h4>{quote.author}</h4>
+      <h4>{quote.date}</h4>
     </div>
   );
 }
