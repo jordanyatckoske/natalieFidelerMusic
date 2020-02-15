@@ -1,16 +1,9 @@
-import Link from "next/link";
+import Navigation from "./Navigation";
 
-const Header = () => {
+export default function Header() {
   return (
-    <div>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </div>
+    <header>
+      <Navigation />
+    </header>
   );
-};
-
-export default Header;
+}

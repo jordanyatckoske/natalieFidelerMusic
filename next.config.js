@@ -7,4 +7,7 @@ module.exports = {
     });
     return cfg;
   },
+  env: {
+    REACT_APP_BANDSINTOWN_APPLICATION_ID: "caace21779fdd6bc893ef420ff089599",
+  },
 };
