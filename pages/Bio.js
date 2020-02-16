@@ -1,10 +1,15 @@
 import MainLayout from "../components/Layouts/MainLayout";
+import {
+  attributes,
+  react as BioContent,
+} from "../content/personalInfo/natalie-fideler.md";
 
 export default function Bio() {
+  let { artistName, artistBio } = attributes;
   return (
     <MainLayout>
-      <h2>Bio</h2>
-      <p>Some content about some stuff doing the things</p>
+      <h2>{artistName}</h2>
+      <p>{artistBio}</p>
     </MainLayout>
   );
 }
