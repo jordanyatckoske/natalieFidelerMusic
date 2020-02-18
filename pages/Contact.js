@@ -38,7 +38,7 @@ export default function Contact() {
       <h2>Contact</h2>
       <p>Reach out to me with questions and gig opportunities.</p>
 
-      <form onSubmit={handleSubmit}>
+      <form name="contact" onSubmit={handleSubmit} data-netlify="true">
         <input
           type="text"
           name="name"
@@ -59,7 +59,7 @@ export default function Contact() {
           value={message}
           onChange={e => setMessage(e.target.value)}
         />
-        <input type="submit" />
+        <button type="submit">Submit</button>
       </form>
     </MainLayout>
   );
