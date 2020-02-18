@@ -14,7 +14,6 @@ export default function Contact() {
   };
 
   const handleSubmit = e => {
-    e.preventDefault();
     Axios.post(
       "/",
       encode({
@@ -31,6 +30,8 @@ export default function Contact() {
     )
       .then(response => console.log("Success!", response))
       .catch(error => console.log(error));
+
+    e.preventDefault();
   };
 
   return (
