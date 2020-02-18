@@ -7,7 +7,7 @@ collections:
   - name: "personalInfo"
     label: "Personal Info"
     folder: "content/personalInfo"
-    identifier_field: artistName
+    # identifier_field: artistName
     create: true
     fields:
       - {
@@ -40,7 +40,7 @@ collections:
   - name: "work"
     label: "Work Experience"
     folder: "content/work"
-    identifier_field: "position"
+    # identifier_field: "position"
     create: true
     fields:
       - label: "Positions"
@@ -63,3 +63,14 @@ collections:
               default: false,
               widget: "boolean",
             }
+  - name: "photos"
+    label: "Photos"
+    folder: "content/photos"
+    create: true
+    fields:
+      - label: "Photos"
+        name: "photos"
+        widget: "list"
+        fields:
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
