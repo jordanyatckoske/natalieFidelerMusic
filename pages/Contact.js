@@ -7,13 +7,13 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  encode = data => {
+  const encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
   };
 
-  handleSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault();
     Axios.post(
       "/",
