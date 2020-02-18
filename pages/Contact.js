@@ -59,6 +59,7 @@ export default function Contact() {
           value={message}
           onChange={e => setMessage(e.target.value)}
         />
+        <input type="submit" />
       </form>
     </MainLayout>
   );
