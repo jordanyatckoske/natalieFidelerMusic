@@ -7,8 +7,8 @@ collections:
   - name: "personalInfo"
     label: "Personal Info"
     folder: "content/personalInfo"
-    # identifier_field: artistName
-    create: true
+    identifier_field: artistName
+    create: false
     fields:
       - {
           label: "Artist Name",
@@ -20,7 +20,7 @@ collections:
       - { label: "Artist Bio", name: "artistBio", widget: "markdown" }
   - name: "quotes"
     label: "Quotes"
-    # identifier_field: "quote"
+    identifier_field: "pressQuotes"
     folder: "content/quotes"
     create: false
     fields:
@@ -40,8 +40,8 @@ collections:
   - name: "work"
     label: "Work Experience"
     folder: "content/work"
-    # identifier_field: "position"
-    create: true
+    identifier_field: "positions"
+    create: false
     fields:
       - label: "Positions"
         name: "positions"
@@ -65,8 +65,9 @@ collections:
             }
   - name: "photos"
     label: "Photos"
+    identifier_field: "photoPage"
     folder: "content/photos"
-    create: true
+    create: false
     fields:
       - label: "Photos"
         name: "photos"
@@ -74,3 +75,9 @@ collections:
         fields:
           - { label: "Image Alt", name: "imageAlt", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
+          - {
+              label: "Photo Page",
+              name: "photoPage",
+              widget: "hidden",
+              default: "Photo Page",
+            }

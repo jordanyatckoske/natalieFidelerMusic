@@ -40,27 +40,46 @@ export default function Contact() {
       <p>Reach out to me with questions and gig opportunities.</p>
 
       <form name="contact" onSubmit={handleSubmit} data-netlify="true">
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={name}
-          onChange={e => setName(e.target.value)}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        />
-        <textarea
-          name="message"
-          placeholder="Message"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
-        />
-        <button type="submit">Submit</button>
+        <div className="field">
+          <div className="control">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              className="input is-rounded"
+              value={name}
+              onChange={e => setName(e.target.value)}
+            />
+          </div>
+        </div>
+        <div className="field">
+          <div className="control">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="input is-rounded"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <div className="field">
+          <div className="control">
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={message}
+              className="textarea is-rounded"
+              onChange={e => setMessage(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <button className="button is-link" type="submit">
+          Submit
+        </button>
       </form>
     </MainLayout>
   );

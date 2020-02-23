@@ -1,4 +1,5 @@
 import Header from "../Header";
+import "../../global.scss";
 
 const MainLayout = props => (
   <div>
