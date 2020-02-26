@@ -35,34 +35,34 @@ export default function Navigation() {
         <Link href="/">
           <a className="navbar-item">Home</a>
         </Link>
-        <Link href="/music">
+        <Link href="/Music">
           <a className="navbar-item">Music</a>
         </Link>
-        <Link href="/bio">
+        <Link href="/Bio">
           <a className="navbar-item">Bio</a>
         </Link>
-        <Link href="/mywork">
+        <Link href="/MyWork">
           <a className="navbar-item">My Work</a>
         </Link>
-        <Link href="/calendar">
+        <Link href="/Calendar">
           <a className="navbar-item">Calendar</a>
         </Link>
-        <Link href="/contact">
+        <Link href="/Contact">
           <a className="navbar-item">Contact</a>
         </Link>
-        <Link href="/presskit">
+        <Link href="/PressKit">
           <a className="navbar-item">Press Kit</a>
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
           <a className="navbar-link">Media</a>
           <div className="navbar-dropdown">
-            <Link href="/photos">
+            <Link href="/Photos">
               <a className="navbar-item">Photos</a>
             </Link>
-            <Link href="/videos">
+            <Link href="/Videos">
               <a className="navbar-item">Videos</a>
             </Link>
-            <Link href="/press">
+            <Link href="/Press">
               <a className="navbar-item">Press</a>
             </Link>
           </div>
