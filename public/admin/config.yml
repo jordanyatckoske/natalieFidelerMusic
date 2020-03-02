@@ -51,7 +51,12 @@ collections:
         fields:
           - { label: "Position", name: "position", widget: "string" }
           - { label: "Employer", name: "employer", widget: "string" }
-          - { label: "Location", name: "location", widget: "map" }
+          - {
+              label: "Location",
+              name: "location",
+              widget: "map",
+              required: false,
+            }
           - {
               label: "Start Date",
               name: "startDate",
