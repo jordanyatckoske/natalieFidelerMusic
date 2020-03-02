@@ -3,6 +3,7 @@ backend:
   branch: master
 media_folder: public/images/uploads
 public_folder: /images/uploads
+logo_url: https://nataliefideler.netlify.com/images/uploads/NFIDELERBANNER.png
 collections:
   - name: "personalInfo"
     label: "Personal Info"
@@ -37,12 +38,7 @@ collections:
               required: false,
             }
           - { label: "Date", name: "date", widget: "datetime" }
-          - {
-              label: "Press",
-              name: "press",
-              widget: "hidden",
-              default: "Press",
-            }
+      - { label: "Press", name: "press", widget: "hidden", default: "Press" }
   - name: "work"
     label: "Work Experience"
     folder: "content/work"
@@ -69,12 +65,12 @@ collections:
               default: false,
               widget: "boolean",
             }
-          - {
-              label: "My Work Page",
-              name: "myWorkPage",
-              widget: "hidden",
-              default: "My Work Page",
-            }
+      - {
+          label: "My Work Page",
+          name: "myWorkPage",
+          widget: "hidden",
+          default: "My Work Page",
+        }
   - name: "photos"
     label: "Photos"
     identifier_field: "photoPage"
@@ -87,9 +83,9 @@ collections:
         fields:
           - { label: "Image Alt", name: "imageAlt", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - {
-              label: "Photo Page",
-              name: "photoPage",
-              widget: "hidden",
-              default: "Photo Page",
-            }
+      - {
+          label: "Photo Page",
+          name: "photoPage",
+          widget: "hidden",
+          default: "Photo Page",
+        }
