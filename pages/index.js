@@ -1,19 +1,31 @@
 import MainLayout from "../components/Layouts/MainLayout";
 import PressList from "../components/Press/PressList";
 import Head from "next/head";
-import { attributes, react as QuoteContent } from "../content/quotes/quotes.md";
+// import {
+//   attributes as quoteAttributes,
+//   react as QuoteContent,
+// } from "../content/quotes/quotes.md";
+import {
+  attributes as bioAttributes,
+  react as BioContent,
+} from "../content/personalInfo/natalie-fideler.md";
 
 export default function Index() {
-  let { pressQuotes } = attributes;
+  // let { pressQuotes } = quoteAttributes;
+  let { artistName } = bioAttributes;
 
-  let homeQuotes = pressQuotes.filter(quote => quote.featuredOnHome === true);
+  // let homeQuotes = pressQuotes.filter(quote => quote.featuredOnHome === true);
   return (
     <MainLayout>
-      <p>Hello Next.js</p>
       <Head>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
-      <PressList pressQuotes={homeQuotes} />
+      <div className="hero">
+        <div className="hero-body">
+          <h1 className="title is-1">{artistName}</h1>
+        </div>
+      </div>
+      {/* <PressList pressQuotes={homeQuotes} /> */}
     </MainLayout>
   );
 }
