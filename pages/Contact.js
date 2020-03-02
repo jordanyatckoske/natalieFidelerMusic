@@ -36,9 +36,12 @@ export default function Contact() {
 
   return (
     <MainLayout>
-      <h2>Contact</h2>
-      <p>Reach out to me with questions and gig opportunities.</p>
-
+      <div className="has-text-centered">
+        <h2 className="title is-1">Contact</h2>
+        <p className="subtitle is-3">
+          Reach out to me with questions and gig opportunities.
+        </p>
+      </div>
       <form name="contact" onSubmit={handleSubmit} data-netlify="true">
         <div className="field">
           <div className="control">

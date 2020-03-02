@@ -1,5 +1,8 @@
 import MainLayout from "../components/Layouts/MainLayout";
-import { attributes, react as PhotoContent } from "../content/photos/photos.md";
+import {
+  attributes,
+  react as PhotoContent,
+} from "../content/photos/photo-page.md";
 import PhotosList from "../components/Photos/PhotosList";
 
 export default function Photos() {
