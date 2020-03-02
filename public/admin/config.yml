@@ -20,9 +20,9 @@ collections:
       - { label: "Artist Bio", name: "artistBio", widget: "markdown" }
   - name: "quotes"
     label: "Quotes"
-    identifier_field: "pressQuotes"
+    identifier_field: "press"
     folder: "content/quotes"
-    create: false
+    create: true
     fields:
       - label: "Press Quotes"
         name: "pressQuotes"
@@ -37,11 +37,17 @@ collections:
               required: false,
             }
           - { label: "Date", name: "date", widget: "datetime" }
+          - {
+              label: "Press",
+              name: "press",
+              widget: "hidden",
+              default: "Press",
+            }
   - name: "work"
     label: "Work Experience"
     folder: "content/work"
-    identifier_field: "positions"
-    create: false
+    identifier_field: "myWorkPage"
+    create: true
     fields:
       - label: "Positions"
         name: "positions"
@@ -63,11 +69,17 @@ collections:
               default: false,
               widget: "boolean",
             }
+          - {
+              label: "My Work Page",
+              name: "myWorkPage",
+              widget: "hidden",
+              default: "My Work Page",
+            }
   - name: "photos"
     label: "Photos"
     identifier_field: "photoPage"
     folder: "content/photos"
-    create: false
+    create: true
     fields:
       - label: "Photos"
         name: "photos"
