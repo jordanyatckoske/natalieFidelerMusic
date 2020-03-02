@@ -8,7 +8,7 @@ collections:
   - name: "personalInfo"
     label: "Personal Info"
     folder: "content/personalInfo"
-    identifier_field: artistName
+    identifier_field: artist
     create: false
     fields:
       - {
@@ -19,11 +19,12 @@ collections:
         }
       # make into relation - { label: "Featured Quote", name: "featuredQuote", widget: 'string'}
       - { label: "Artist Bio", name: "artistBio", widget: "markdown" }
+      - { label: "Artist", name: "artist", widget: hidden, default: "Artist" }
   - name: "quotes"
     label: "Quotes"
     identifier_field: "press"
     folder: "content/quotes"
-    create: true
+    create: false
     fields:
       - label: "Press Quotes"
         name: "pressQuotes"
@@ -43,7 +44,7 @@ collections:
     label: "Work Experience"
     folder: "content/work"
     identifier_field: "myWorkPage"
-    create: true
+    create: false
     fields:
       - label: "Positions"
         name: "positions"
@@ -88,7 +89,7 @@ collections:
     label: "Photos"
     identifier_field: "photoPage"
     folder: "content/photos"
-    create: true
+    create: false
     fields:
       - label: "Photos"
         name: "photos"
