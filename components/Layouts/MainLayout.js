@@ -4,7 +4,10 @@ import "../../global.scss";
 const MainLayout = props => (
   <div>
     <Header />
-    {props.children}
+    <main className="container">{props.children}</main>
+    <footer className="has-text-centered footer container">
+      &copy; Natalie Fideler {new Date().getFullYear()}{" "}
+    </footer>
   </div>
 );
 

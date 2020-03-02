@@ -10,8 +10,9 @@ export default function Photos() {
 
   return (
     <MainLayout>
-      <h2>Photos</h2>
-      <p>Some content about some stuff doing the things</p>
+      <div className="has-text-centered">
+        <h2 className="title is-1">Photos</h2>
+      </div>
       <PhotosList photos={photos} />
     </MainLayout>
   );

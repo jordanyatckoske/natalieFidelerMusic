@@ -9,14 +9,9 @@ collections:
     label: "Personal Info"
     folder: "content/personalInfo"
     identifier_field: artist
-    create: true
+    create: false
     fields:
-      - {
-          label: "Artist Name",
-          name: "artistName",
-          default: "Natalie Fideler",
-          widget: "string",
-        }
+      - { label: "Artist Name", name: "artistName", widget: "string" }
       # make into relation - { label: "Featured Quote", name: "featuredQuote", widget: 'string'}
       - { label: "Artist Bio", name: "artistBio", widget: "markdown" }
       - { label: "Artist", name: "artist", widget: hidden, default: "Artist" }
@@ -38,7 +33,13 @@ collections:
               widget: "boolean",
               required: false,
             }
-          - { label: "Date", name: "date", widget: "datetime" }
+          - {
+              label: "Date",
+              name: "date",
+              widget: "datetime",
+              dateFormat: "DD.MM.YYYY",
+              timeFormat: false,
+            }
       - { label: "Press", name: "press", widget: "hidden", default: "Press" }
   - name: "work"
     label: "Work Experience"

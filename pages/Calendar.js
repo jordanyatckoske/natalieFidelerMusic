@@ -24,10 +24,13 @@ export default function Calendar() {
 
   return (
     <MainLayout>
-      <h2>Calendar</h2>
-      <p>
-        Keep up with my future shows and see where I have previously performed!
-      </p>
+      <div className="has-text-centered">
+        <h2 className="title is-1">Calendar</h2>
+        <p className="subtitle is-3">
+          Keep up with my future shows and see where I have previously
+          performed!
+        </p>
+      </div>
       <EventsList events={events} />
     </MainLayout>
   );
