@@ -9,7 +9,7 @@ collections:
     label: "Personal Info"
     folder: "content/personalInfo"
     identifier_field: artist
-    create: false
+    create: true
     fields:
       - {
           label: "Artist Name",
