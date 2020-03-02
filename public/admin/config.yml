@@ -52,12 +52,20 @@ collections:
           - { label: "Position", name: "position", widget: "string" }
           - { label: "Employer", name: "employer", widget: "string" }
           - { label: "Location", name: "location", widget: "map" }
-          - { label: "Start Date", name: "startDate", widget: "datetime" }
+          - {
+              label: "Start Date",
+              name: "startDate",
+              widget: "datetime",
+              dateFormat: "MM.YYYY",
+              timeFormat: false,
+            }
           - {
               label: "End Date",
               name: "endDate",
               widget: "datetime",
               required: false,
+              dateFormat: "MM.YYYY",
+              timeFormat: false,
             }
           - {
               label: "Current",
