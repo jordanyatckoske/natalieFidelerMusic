@@ -3,9 +3,5 @@ export default function LineupList({ lineup }) {
     return <li key={artist}>{artist}</li>;
   });
 
-  return (
-    <div>
-      <ul>{list}</ul>
-    </div>
-  );
+  return <ul className="content">{list}</ul>;
 }

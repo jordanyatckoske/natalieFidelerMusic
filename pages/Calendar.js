@@ -24,7 +24,7 @@ export default function Calendar() {
 
   return (
     <MainLayout>
-      <div className="has-text-centered">
+      <div className="has-text-centered content">
         <h2 className="title is-1">Calendar</h2>
         <p className="subtitle is-3">
           Keep up with my future shows and see where I have previously
@@ -32,6 +32,17 @@ export default function Calendar() {
         </p>
       </div>
       <EventsList events={events} />
+      <div className="columns">
+        <div className="column has-text-centered">
+          <a
+            className="button"
+            href="https://www.bandsintown.com/a/15465011-natalie-fideler/past-events?came_from=257&utm_medium=web&utm_source=artist_page"
+            target="_blank"
+          >
+            Past Events
+          </a>
+        </div>
+      </div>
     </MainLayout>
   );
 }
