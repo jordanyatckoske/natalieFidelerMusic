@@ -5,5 +5,5 @@ export default function PressList({ pressQuotes }) {
     return <PressCard quote={quote} key={quote.date} />;
   });
 
-  return <div>{pressList}</div>;
+  return <div className="section">{pressList}</div>;
 }

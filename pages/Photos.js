@@ -4,16 +4,20 @@ import {
   react as PhotoContent,
 } from "../content/photos/photo-page.md";
 import PhotosList from "../components/Photos/PhotosList";
+import MainSection from "../components/Layouts/MainSection";
+import TitleSection from "../components/Layouts/TitleSection";
 
 export default function Photos() {
   let { photos } = attributes;
 
   return (
     <MainLayout>
-      <div className="has-text-centered">
+      <TitleSection>
         <h2 className="title is-1">Photos</h2>
-      </div>
-      <PhotosList photos={photos} />
+      </TitleSection>
+      <MainSection>
+        <PhotosList photos={photos} />
+      </MainSection>
     </MainLayout>
   );
 }

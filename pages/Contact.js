@@ -1,6 +1,8 @@
 import MainLayout from "../components/Layouts/MainLayout";
 import { useState } from "react";
 import Axios from "axios";
+import MainSection from "../components/Layouts/MainSection";
+import TitleSection from "../components/Layouts/TitleSection";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -36,54 +38,56 @@ export default function Contact() {
 
   return (
     <MainLayout>
-      <div className="has-text-centered">
+      <TitleSection>
         <h2 className="title is-1">Contact</h2>
         <p className="subtitle is-3">
           Reach out to me with questions and gig opportunities.
         </p>
-      </div>
-      <form name="contact" onSubmit={handleSubmit} data-netlify="true">
-        <div className="field">
-          <div className="control">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              className="input is-rounded"
-              value={name}
-              onChange={e => setName(e.target.value)}
-            />
+      </TitleSection>
+      <MainSection>
+        <form name="contact" onSubmit={handleSubmit} data-netlify="true">
+          <div className="field">
+            <div className="control">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                className="input is-rounded"
+                value={name}
+                onChange={e => setName(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
-        <div className="field">
-          <div className="control">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              className="input is-rounded"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-            />
+          <div className="field">
+            <div className="control">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="input is-rounded"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="field">
-          <div className="control">
-            <textarea
-              name="message"
-              placeholder="Message"
-              value={message}
-              className="textarea is-rounded"
-              onChange={e => setMessage(e.target.value)}
-            />
+          <div className="field">
+            <div className="control">
+              <textarea
+                name="message"
+                placeholder="Message"
+                value={message}
+                className="textarea is-rounded"
+                onChange={e => setMessage(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
 
-        <button className="button is-link" type="submit">
-          Submit
-        </button>
-      </form>
+          <button className="button is-link" type="submit">
+            Submit
+          </button>
+        </form>
+      </MainSection>
     </MainLayout>
   );
 }

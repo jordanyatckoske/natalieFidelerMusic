@@ -1,5 +1,4 @@
 import LineupList from "./LineupList";
-import EventsList from "./EventsList";
 
 export default function EventCard({ event }) {
   return (

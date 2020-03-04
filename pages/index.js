@@ -1,4 +1,5 @@
 import MainLayout from "../components/Layouts/MainLayout";
+import MainSection from "../components/Layouts/MainSection";
 import PressList from "../components/Press/PressList";
 import Head from "next/head";
 import {
@@ -9,6 +10,7 @@ import {
   attributes as bioAttributes,
   react as BioContent,
 } from "../content/personalInfo/artist.md";
+import TitleSection from "../components/Layouts/TitleSection";
 
 export default function Index() {
   let { pressQuotes } = quoteAttributes;
@@ -20,12 +22,20 @@ export default function Index() {
       <Head>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
-      <div className="hero">
-        <div className="hero-body">
-          <h1 className="title is-1">{artistName}</h1>
-        </div>
-      </div>
-      <PressList pressQuotes={homeQuotes} />
+      {/* <div className="hero has-text-centered is-primary is-bold is-large">
+        <div className="hero-body"> */}
+      {/* <h1 className="title is-1">{artistName}</h1> */}
+      <TitleSection>
+        <img src="images/uploads/NFIDELERBANNER.png" />
+        {/* <img className="is-overlay" src="images/uploads/Action1.jpg" /> */}
+        <h3 className="subtitle is-4 is-italic">Artist and Composer</h3>
+      </TitleSection>
+
+      {/* </div>
+      </div> */}
+      <MainSection>
+        <PressList pressQuotes={homeQuotes} />
+      </MainSection>
     </MainLayout>
   );
 }

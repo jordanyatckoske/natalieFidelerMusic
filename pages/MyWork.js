@@ -5,6 +5,8 @@ import {
 } from "../content/work/my-work-page.md";
 // import MyWorkList from "../components/MyWork/MyWorkList";
 import MyWorkCard from "../components/MyWork/MyWorkCard";
+import MainSection from "../components/Layouts/MainSection";
+import TitleSection from "../components/Layouts/TitleSection";
 
 export default function MyWork() {
   let { positions } = attributes;
@@ -14,16 +16,15 @@ export default function MyWork() {
   });
   return (
     <MainLayout>
-      <div className="has-text-centered">
+      <TitleSection>
         <h2 className="title is-1">My Work</h2>
         <p className="subtitle is-3">
           Some content about some stuff doing the things
         </p>
-      </div>
-      <div className="columns">
-        {/* <MyWorkList positions={positions} /> */}
-        {myWorkList}
-      </div>
+      </TitleSection>
+      <MainSection>
+        <div className="columns">{myWorkList}</div>
+      </MainSection>
     </MainLayout>
   );
 }

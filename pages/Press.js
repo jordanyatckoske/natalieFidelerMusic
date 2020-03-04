@@ -2,15 +2,19 @@ import Head from "next/head";
 import MainLayout from "../components/Layouts/MainLayout";
 import PressList from "../components/Press/PressList";
 import { attributes, react as HomeContent } from "../content/quotes/press.md";
+import MainSection from "../components/Layouts/MainSection";
+import TitleSection from "../components/Layouts/TitleSection";
 
 function Press() {
   let { pressQuotes } = attributes;
   return (
     <MainLayout>
-      <div className="has-text-centered">
+      <TitleSection>
         <h2 className="title is-1">Press</h2>
-      </div>
-      <PressList pressQuotes={pressQuotes} />
+      </TitleSection>
+      <MainSection>
+        <PressList pressQuotes={pressQuotes} />
+      </MainSection>
     </MainLayout>
   );
 }
