@@ -5,7 +5,7 @@ positions:
     endDate: ''
     position: Freelancer
     employer: Self-Employed
-    location: '{"type":"Point","coordinates":[-93.2623901,44.9640205]}'
+    location: 'Moorhead & St. Paul, MN'
     positionDescription: >-
       * Composing, arranging, orchestrating, and engraving music for
       commissioners including the Lyra Trio, Triangulum, Theatre B in Moorhead,
@@ -49,5 +49,6 @@ positions:
       * Attending daily meetings, handling music gear, and nurturing a
       supportive environment for both
         coworkers and students
+    location: 'Minneapolis, MN'
 myWorkPage: My Work Page
 ---
