@@ -23,7 +23,7 @@ export default function MyWork() {
         </p>
       </TitleSection>
       <MainSection>
-        <div className="columns">{myWorkList}</div>
+        <div className="columns is-multiline">{myWorkList}</div>
       </MainSection>
     </MainLayout>
   );

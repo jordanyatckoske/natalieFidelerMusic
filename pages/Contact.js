@@ -45,7 +45,12 @@ export default function Contact() {
         </p>
       </TitleSection>
       <MainSection>
-        <form name="contact" onSubmit={handleSubmit} data-netlify="true">
+        <form
+          name="contact"
+          onSubmit={handleSubmit}
+          data-netlify="true"
+          className="hero-body"
+        >
           <div className="field">
             <div className="control">
               <input
