@@ -3,5 +3,5 @@ export default function LineupList({ lineup }) {
     return <li key={artist}>{artist}</li>;
   });
 
-  return <ul className="content">{list}</ul>;
+  return <ul className="content has-text-grey">{list}</ul>;
 }

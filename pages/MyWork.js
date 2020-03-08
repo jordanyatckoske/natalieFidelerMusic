@@ -16,7 +16,7 @@ export default function MyWork() {
   });
   return (
     <MainLayout>
-      <TitleSection>
+      <TitleSection image="images/uploads/Natalie25.jpg">
         <h2 className="title is-1">My Work</h2>
         <p className="subtitle is-3">
           Some content about some stuff doing the things

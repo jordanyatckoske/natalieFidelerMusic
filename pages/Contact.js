@@ -38,7 +38,7 @@ export default function Contact() {
 
   return (
     <MainLayout>
-      <TitleSection>
+      <TitleSection image="images/uploads/Natalie59.jpg">
         <h2 className="title is-1">Contact</h2>
         <p className="subtitle is-3">
           Reach out to me with questions and gig opportunities.
@@ -52,7 +52,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="input is-rounded"
+                className="input is-rounded is-link has-text-info"
                 value={name}
                 onChange={e => setName(e.target.value)}
               />
@@ -64,7 +64,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="input is-rounded"
+                className="input is-rounded is-link has-text-info"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
               />
@@ -77,15 +77,18 @@ export default function Contact() {
                 name="message"
                 placeholder="Message"
                 value={message}
-                className="textarea is-rounded"
+                className="textarea is-rounded is-link has-text-info"
                 onChange={e => setMessage(e.target.value)}
               />
             </div>
           </div>
-
-          <button className="button is-link" type="submit">
-            Submit
-          </button>
+          <div className="columns">
+            <div className="column has-text-centered">
+              <button className="button is-link is-medium" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
         </form>
       </MainSection>
     </MainLayout>

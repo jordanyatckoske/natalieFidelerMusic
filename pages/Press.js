@@ -9,7 +9,7 @@ function Press() {
   let { pressQuotes } = attributes;
   return (
     <MainLayout>
-      <TitleSection>
+      <TitleSection image="images/uploads/Headshot1.jpg">
         <h2 className="title is-1">Press</h2>
       </TitleSection>
       <MainSection>

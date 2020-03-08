@@ -26,7 +26,7 @@ export default function Calendar() {
 
   return (
     <MainLayout>
-      <TitleSection>
+      <TitleSection image="images/uploads/Natalie_theEntry.jpg">
         <h2 className="title is-1">Calendar</h2>
         <p className="subtitle is-3">
           Keep up with my future shows and see where I have previously
@@ -38,7 +38,7 @@ export default function Calendar() {
         <div className="columns">
           <div className="column has-text-centered">
             <a
-              className="button"
+              className="button is-link is-medium"
               href="https://www.bandsintown.com/a/15465011-natalie-fideler/past-events?came_from=257&utm_medium=web&utm_source=artist_page"
               target="_blank"
             >

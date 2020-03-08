@@ -80,6 +80,12 @@ collections:
               default: false,
               widget: "boolean",
             }
+          - {
+              label: "Description",
+              name: "positionDescription",
+              widget: "markdown",
+              required: false,
+            }
       - {
           label: "My Work Page",
           name: "myWorkPage",

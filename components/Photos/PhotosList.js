@@ -24,8 +24,8 @@ export default function PhotosList({ photos }) {
       <div className="tile is-parent is-4 is-vertical">
         {photosList[2]}
         {photosList[3]}
-        {photosList[2]}
-        {photosList[3]}
+        {photosList[4]}
+        {photosList[5]}
         {photosList[0]}
       </div>
     </div>

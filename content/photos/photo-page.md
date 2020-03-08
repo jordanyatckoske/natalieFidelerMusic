@@ -4,7 +4,7 @@ photos:
     image: /images/uploads/Headshot1.JPG
   - image: /images/uploads/Action2.jpg
     imageAlt: Playing at the raven
-  - image: /images/uploads/Natalie @ the ENTRY final edit 1 .jpg
+  - image: /images/uploads/Natalie_theEntry.jpg
     imageAlt: Close up with guitar
   - image: /images/uploads/Natalie125.jpg
     imageAlt: Pose on stairs

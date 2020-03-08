@@ -25,9 +25,10 @@ export default function Index() {
       {/* <div className="hero has-text-centered is-primary is-bold is-large">
         <div className="hero-body"> */}
       {/* <h1 className="title is-1">{artistName}</h1> */}
-      <TitleSection>
+      {/* <img className="hero-image-cover" src="images/uploads/Action1.jpg" /> */}
+
+      <TitleSection image="images/uploads/Action1.jpg">
         <img src="images/uploads/NFIDELERBANNER.png" />
-        {/* <img className="is-overlay" src="images/uploads/Action1.jpg" /> */}
         <h3 className="subtitle is-4 is-italic">Artist and Composer</h3>
       </TitleSection>
 

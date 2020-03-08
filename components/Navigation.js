@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function Navigation() {
   const [isActive, setIsActive] = useState(false);
+  useEffect(() => {
+    document.body.className = "has-navbar-fixed-top";
+  }, []);
 
   return (
     <div
