@@ -56,7 +56,7 @@ collections:
           - {
               label: "Location",
               name: "location",
-              widget: "map",
+              widget: "string",
               required: false,
             }
           - {
@@ -73,6 +73,7 @@ collections:
               required: false,
               dateFormat: "MM.YYYY",
               timeFormat: false,
+              default: "",
             }
           - {
               label: "Current",
