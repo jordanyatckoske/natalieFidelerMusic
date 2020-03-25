@@ -35,8 +35,8 @@ export default function Calendar() {
       </TitleSection>
       <MainSection>
         <EventsList events={events} />
-        <div className="columns">
-          <div className="column has-text-centered">
+        <div className="columns is-multiline">
+          <div className="column is-full has-text-centered">
             <a
               className="button is-link is-medium"
               href="https://www.bandsintown.com/a/15465011-natalie-fideler/past-events?came_from=257&utm_medium=web&utm_source=artist_page"
