@@ -17,9 +17,9 @@ export default function MyWork() {
   return (
     <MainLayout>
       <TitleSection image="images/uploads/Natalie25.jpg">
-        <h2 className="title is-1">My Work</h2>
-        <p className="subtitle is-3">
-          Some content about some stuff doing the things
+        <h2 className="animated fadeInUp title is-1">My Work</h2>
+        <p className="animated fadeInDown subtitle is-3">
+          My experiences in each of my careers
         </p>
       </TitleSection>
       <MainSection>

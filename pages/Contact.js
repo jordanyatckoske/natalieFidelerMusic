@@ -39,8 +39,8 @@ export default function Contact() {
   return (
     <MainLayout>
       <TitleSection image="images/uploads/Natalie59.jpg">
-        <h2 className="title is-1">Contact</h2>
-        <p className="subtitle is-3">
+        <h2 className="animated fadeInUp title is-1">Contact</h2>
+        <p className="animated fadeInDown subtitle is-3">
           Reach out to me with questions and gig opportunities.
         </p>
       </TitleSection>
@@ -57,9 +57,10 @@ export default function Contact() {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="input is-rounded is-link has-text-info"
+                className="animated fadeInDown input is-rounded is-link has-text-info"
                 value={name}
                 onChange={e => setName(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -69,9 +70,10 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="input is-rounded is-link has-text-info"
+                className="animated fadeInDown input is-rounded is-link has-text-info"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -80,16 +82,20 @@ export default function Contact() {
             <div className="control">
               <textarea
                 name="message"
-                placeholder="Message"
+                placeholder="What's Up?"
                 value={message}
-                className="textarea is-rounded is-link has-text-info"
+                className="animated fadeInDown textarea is-rounded is-link has-text-info"
                 onChange={e => setMessage(e.target.value)}
+                required
               />
             </div>
           </div>
           <div className="columns">
-            <div className="column has-text-centered">
-              <button className="button is-link is-medium" type="submit">
+            <div className="column has-text-centered animated fadeInDown">
+              <button
+                className="animated pulse delay-2s slower infinite button is-link is-medium"
+                type="submit"
+              >
                 Submit
               </button>
             </div>

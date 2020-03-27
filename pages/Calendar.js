@@ -17,18 +17,18 @@ export default function Calendar() {
         // data.venue.(name, latitude, longitude, region, city)
         // data.lineup
         // data.url
-        console.log(response);
+        // console.log(response);
       })
       .catch(function(error) {
-        console.log(error);
+        // console.log(error);
       });
   }, []);
 
   return (
     <MainLayout>
       <TitleSection image="images/uploads/Natalie_theEntry.jpg">
-        <h2 className="title is-1">Calendar</h2>
-        <p className="subtitle is-3">
+        <h2 className="animated fadeInUp title is-1">Calendar</h2>
+        <p className="animated fadeInDown subtitle is-3">
           Keep up with my future shows and see where I have previously
           performed!
         </p>
@@ -38,7 +38,7 @@ export default function Calendar() {
         <div className="columns is-multiline">
           <div className="column is-full has-text-centered">
             <a
-              className="button is-link is-medium"
+              className="button is-link is-medium has-text-white"
               href="https://www.bandsintown.com/a/15465011-natalie-fideler/past-events?came_from=257&utm_medium=web&utm_source=artist_page"
               target="_blank"
             >

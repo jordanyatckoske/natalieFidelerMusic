@@ -13,7 +13,7 @@ export default function Photos() {
   return (
     <MainLayout>
       <TitleSection>
-        <h2 className="title is-1">Photos</h2>
+        <h2 className="animated fadeInUp title is-1">Photos</h2>
       </TitleSection>
       <MainSection>
         <PhotosList photos={photos} />

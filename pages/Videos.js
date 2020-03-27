@@ -6,10 +6,7 @@ export default function Videos() {
   return (
     <MainLayout>
       <TitleSection>
-        <h2 className="title is-1">Videos</h2>
-        <p className="subtitle is-3">
-          Some content about some stuff doing the things
-        </p>
+        <h2 className="animated fadeInUp title is-1">Videos</h2>
       </TitleSection>
       <MainSection></MainSection>
     </MainLayout>

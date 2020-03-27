@@ -1,8 +1,8 @@
 @charset "utf-8";
 
+@import "./node_modules/animate.css/animate.min.css";
 // Import a Google Font
 // @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-
 // Set your brand colors
 // $purple: #8a4d76;
 // $pink: #fa7c91;
@@ -15,14 +15,20 @@ $lightGreen: #57ba98;
 $mintGreen: #65ccb8;
 $darkAccent: #182628;
 
+$shirtGreen: #05a291;
+
+$palleteLink: #03dac8;
+$palleteInfo: #008778;
+$palletePrimary: #00685d;
+
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $darkAccent;
 $dark: $darkAccent;
 $grey-light: $beige-light;
-$primary: $forestGreen;
-$info: $mintGreen;
-$link: $lightGreen;
+$primary: $palletePrimary;
+$info: $palleteInfo;
+$link: $palleteLink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -53,7 +59,7 @@ $footer-background-color: transparent;
 
 /* Some vars */
 // $background-color: hsl(50, 5, 97);
-$background-color: $mintGreen;
+$background-color: $palleteInfo;
 $black: hsl(200, 40, 10);
 // $white: $background-color;
 // $base-font-size: 2.4em;

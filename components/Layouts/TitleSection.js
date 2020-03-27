@@ -1,6 +1,6 @@
 const TitleSection = props => (
   <div
-    className="hero has-text-centered is-large hero-image-background is-link is-bold"
+    className="animated fadeIn hero has-text-centered is-large hero-image-background is-primary is-bold"
     style={{ backgroundImage: `url(${props.image})` }}
   >
     {/* <img className="hero-image-cover" src={props.image} /> */}

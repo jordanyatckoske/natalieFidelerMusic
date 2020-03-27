@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import ActiveLink from "./ActiveLink";
 export default function Navigation() {
   const [isActive, setIsActive] = useState(false);
   useEffect(() => {
@@ -8,14 +9,14 @@ export default function Navigation() {
 
   return (
     <div
-      className="navbar is-fixed-top"
+      className="animated fadeInDown navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
       {/* <div className="container"> */}
       <div className="navbar-brand navbar-start">
         <Link href="/">
-          <a className="navbar-item">
+          <a className="animated fadeInLeft delay-2s navbar-item">
             <img
               src="images/uploads/NFIDELERBANNER.png"
               width="112"
@@ -29,7 +30,9 @@ export default function Navigation() {
             setIsActive(!isActive);
           }}
           role="button"
-          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          className={`animated fadeInRight delay-1s navbar-burger burger ${
+            isActive ? "is-active" : ""
+          }`}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -39,40 +42,68 @@ export default function Navigation() {
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div className={`navbar-menu navbar-end ${isActive ? "is-active" : ""}`}>
-        <Link href="/">
+      <div
+        className={`animated fadeIn navbar-menu navbar-end ${
+          isActive ? "is-active" : ""
+        }`}
+      >
+        <ActiveLink activeClassName="animated bounce has-text-link" href="/">
           <a className="navbar-item">Home</a>
-        </Link>
-        <Link href="/Music">
+        </ActiveLink>
+        <ActiveLink
+          activeClassName="animated bounce has-text-link"
+          href="/Music"
+        >
           <a className="navbar-item">Music</a>
-        </Link>
-        <Link href="/Bio">
+        </ActiveLink>
+        <ActiveLink activeClassName="animated bounce has-text-link" href="/Bio">
           <a className="navbar-item">Bio</a>
-        </Link>
-        <Link href="/MyWork">
+        </ActiveLink>
+        <ActiveLink
+          activeClassName="animated bounce has-text-link"
+          href="/MyWork"
+        >
           <a className="navbar-item">My Work</a>
-        </Link>
-        <Link href="/Calendar">
+        </ActiveLink>
+        <ActiveLink
+          activeClassName="animated bounce has-text-link"
+          href="/Calendar"
+        >
           <a className="navbar-item">Calendar</a>
-        </Link>
-        <Link href="/Contact">
+        </ActiveLink>
+        <ActiveLink
+          activeClassName="animated bounce has-text-link"
+          href="/Contact"
+        >
           <a className="navbar-item">Contact</a>
-        </Link>
-        <Link href="/PressKit">
+        </ActiveLink>
+        <ActiveLink
+          activeClassName="animated bounce has-text-link"
+          href="/PressKit"
+        >
           <a className="navbar-item">Press Kit</a>
-        </Link>
+        </ActiveLink>
         <div className="navbar-item has-dropdown is-hoverable">
           <a className="navbar-link">Media</a>
           <div className="navbar-dropdown">
-            <Link href="/Photos">
+            <ActiveLink
+              activeClassName="animated bounce has-text-link"
+              href="/Photos"
+            >
               <a className="navbar-item">Photos</a>
-            </Link>
-            <Link href="/Videos">
+            </ActiveLink>
+            <ActiveLink
+              activeClassName="animated bounce has-text-link"
+              href="/Videos"
+            >
               <a className="navbar-item">Videos</a>
-            </Link>
-            <Link href="/Press">
+            </ActiveLink>
+            <ActiveLink
+              activeClassName="animated bounce has-text-link"
+              href="/Press"
+            >
               <a className="navbar-item">Press</a>
-            </Link>
+            </ActiveLink>
           </div>
         </div>
       </div>

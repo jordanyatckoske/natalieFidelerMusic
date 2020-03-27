@@ -12,8 +12,8 @@ export default function Music() {
   return (
     <MainLayout>
       <TitleSection>
-        <h2 className="title is-1">Music</h2>
-        <p className="subtitle is-3">
+        <h2 className="animated fadeInUp title is-1">Music</h2>
+        <p className="animated fadeInDown subtitle is-3">
           Catch up on my latest and most popular releases!
         </p>
       </TitleSection>
