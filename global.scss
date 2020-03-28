@@ -2,6 +2,7 @@
 
 @import "./node_modules/animate.css/animate.min.css";
 @import "./Assets/SCSS/socialIcons.scss";
+// @import "./Assets/SCSS/fonts.css";
 
 // Import a Google Font
 // @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
@@ -76,6 +77,20 @@ button.button {
 }
 a.button {
   box-shadow: 5px 2px 15px -5px rgba(0, 0, 0, 0.37);
+}
+
+//parallax
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// turn off for phones
+@media only screen and (max-device-width: 769px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 /* Some vars */

@@ -60,7 +60,7 @@ export default function Index() {
               </h3>
               <ScrollAnimation
                 animateIn="fadeIn"
-                delay="2000"
+                delay="1000"
                 animateOnce="true"
               >
                 {event ? <EventCard event={event} /> : null}

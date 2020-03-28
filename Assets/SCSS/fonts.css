@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "WebFonts";
+  src: local("Cartoon Relief"), local("CartoonRelief"),
+    url(./Assets/Fonts/cartoon-relief/CartoonRelief.ttf) format("truetype");
+}
