@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 @import "./node_modules/animate.css/animate.min.css";
+@import "./Assets/SCSS/socialIcons.scss";
+
 // Import a Google Font
 // @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 // Set your brand colors
@@ -56,6 +58,25 @@ $footer-background-color: transparent;
 @import "./node_modules/bulma/sass/components/navbar.sass";
 @import "./node_modules//bulma/sass/components/card.sass";
 @import "./node_modules//bulma/sass/components/tabs.sass";
+
+// Inputs
+.field .control textarea {
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  border-radius: 2em;
+  padding: 1em;
+  box-shadow: 5px 2px 15px -5px rgba(0, 0, 0, 0.37);
+}
+.field .control input {
+  box-shadow: 5px 2px 15px -5px rgba(0, 0, 0, 0.37);
+}
+button.button {
+  box-shadow: 5px 2px 15px -5px rgba(0, 0, 0, 0.37);
+}
+a.button {
+  box-shadow: 5px 2px 15px -5px rgba(0, 0, 0, 0.37);
+}
 
 /* Some vars */
 // $background-color: hsl(50, 5, 97);

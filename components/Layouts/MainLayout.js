@@ -6,7 +6,7 @@ const MainLayout = props => (
   <div>
     <Header />
     <div>{props.children}</div>
-    <ScrollAnimation animateIn="fadeInUp" delay="1000" animateOnce="true">
+    <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
       <footer className="animated pulse delay-2s subtitle is-4 has-text-centered footer container has-text-info">
         &copy; Natalie Fideler {new Date().getFullYear()}{" "}
       </footer>
