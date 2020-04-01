@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nataliefideler.netlify.app/images/uploads/NFIDELERBANNER.png">
-    <img alt="Natalie" src="https://nataliefideler.netlify.app/images/uploads/NFIDELERBANNER.png" width="60" />
+    <img alt="Natalie" src="https://nataliefideler.netlify.app/images/uploads/NFIDELERBANNER.png" width="400" />
   </a>
 </p>
 <h1 align="center">
