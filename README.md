@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://nataliefideler.netlify.app/images/uploads/NFIDELERBANNER.png">
+    <img alt="Natalie" src="https://nataliefideler.netlify.app/images/uploads/NFIDELERBANNER.png" width="60" />
   </a>
 </p>
 <h1 align="center">
