@@ -9,4 +9,4 @@
 
 This project is build for a local musican, Natalie Fideler, who is based out of Minneapolis. I have used React (NEXT) on the frontend with a CMS built using Netlify CMS for content editing. Additional styling using Bulma and SCSS is used.
 
-This project is a work in progress. Current version can be found here: https://nataliefideler.netlify.app/
+This project is a work in progress and has not been launched due to the impact of COVID-19 on the music industry. Current progress can be found here: https://nataliefideler.netlify.app/
