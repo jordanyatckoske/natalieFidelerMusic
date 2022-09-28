@@ -7,7 +7,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -20,17 +22,19 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@zeit/next-sass": "^1.0.1",
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.3",
     "bulma": "^0.8.0",
-    "next": "^9.2.1",
-    "node-sass": "^4.13.1",
+    "next": "^11.1.0",
+    "node-sass": "^7.0.2",
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
-    "react-markdown": "^4.3.1",
-    "sass": "^1.25.0"
+    "react-markdown": "^5.0.0",
+    "sass": "^1.25.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "frontmatter-markdown-loader": "^3.1.0"
-  }
+  },
+  "snyk": true
 }
